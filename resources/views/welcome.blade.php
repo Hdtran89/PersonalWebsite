@@ -1,95 +1,249 @@
 <!doctype html>
 <html lang="{{ app()->getLocale() }}">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <title>Hieu Tran</title>
 
-        <title>Laravel</title>
+    <!-- Fonts -->
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Montserrat:400,700|Cardo:400,400italic,700">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
-
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
+    <!-- onepage scroll stylesheet-->
+    <link rel="stylesheet" href="css/onepage-scroll.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- Tweaks for older IEs--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    
+</head>
+<body>
+    <div class="wrapper">
+      <div class="main"> 
+        <!-- page 1-->
+        <section id="page1">
+          <div class="overlay"></div>
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 col-sm-12">
+                  <p class="italic">Oh, hello, nice to meet you!</p>
+                  <h1>My name is Hieu Tran.</h1>
+                  <p class="italic">"Any fool can write code a computer can understand. Good programmers write code that humans can understand." -Martin Fowler </p>
+                  <p class="italic">I am a Freelance Developer and Software Engineer</p>
                 </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+              </div>
             </div>
-        </div>
-    </body>
+          </div>
+          <div class="icon faa-float animated"><i class="fa fa-angle-double-down"></i></div>
+        </section>
+        <!-- page 2-->
+        <section id="page2">
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-6"> 
+                  <h2 class="heading">About me</h2>
+                  <p class="lead">
+                    while(true) 
+                  <br>  if(hungry) 
+                  <br>    eat 
+                  <br>  else if (tired) 
+                  <br>    drink tea
+                  <br>  else
+                  <br>    code
+                  </p>
+                  <p> Coding is my passion. When stress, I relax by working out, playing sports, or fishing. I love cooking, one day I will own a food truck. </p>
+                  <p> I am currently working as Field Prototype Engineer at Mercedes-Benz | Future Transportation North America </p>
+                  <p> On my free time I work on iOS, Android, and Web projects. Please feel free to check out my portfolio. If need, CONTACT ME. </p>
+                </div>
+                <div class="col-md-5 col-md-offset-1">
+                  <p><img src="img/about.jpg" alt="" class="img-responsive img-circle"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page 3 - class section-gray adds gray background-->
+        <section id="page3" class="section-gray">
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row services">
+                <div class="col-md-12">
+                  <h2 class="heading">Services</h2>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="box">
+                        <div class="icon"><i class="fa fa-desktop"></i></div>
+                        <h4 class="heading">WEB</h4>
+                        <p><b>LAMP</b> is my cooking tools, but I can handle a <b>Python</b> or <b>Ruby</b> knife. To make a dish look presentable, I use <b>Javascript</b> and to garnish I use <b>CSS</b></p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box">
+                        <div class="icon"><i class="fa fa-mobile"></i></div>
+                        <h4 class="heading">iOS</h4>
+                        <p><b>Swift</b> is my knife. <b>Objective-C</b> is my cutting board. With this combination my knife skills are near perfection.</p>
+                      </div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box">
+                        <div class="icon"><i class="fa fa-android"></i></div>
+                        <h4 class="heading">ANDROID</h4>
+                        <p>My stove is <b>Java</b>. I create wonderful Apps with this stove. </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="page4">
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="heading">Portfolio</h2>
+                  <p class="text-center">Browse my work!</p>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-5.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                    <div class="col-sm-4">
+                      <div class="box"><a href="#" title=""><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- page 5-->
+{{--         <section id="page5" class="section-gray">
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="heading">Text page</h2>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>Able an hope of body. Any nay shyness article matters own removal nothing his forming. Gay own additions education satisfied the perpetual. If he cause manor happy. Without farther she exposed saw man led. Along on happy could cease green oh. </p>
+                      <p>Betrayed cheerful declared end and. Questions we additions is extremely incommode. Next half add call them eat face. Age lived smile six defer bed their few. Had admitting concluded too behaviour him she. Of death to or to being other. </p>
+                    </div>
+                    <div class="col-sm-6">
+                      <p>Effects present letters inquiry no an removed or friends. Desire behind latter me though in. Supposing shameless am he engrossed up additions. My possible peculiar together to. Desire so better am cannot he up before points. Remember mistaken opinions it pleasure of debating. Court front maids forty if aware their at. Chicken use are pressed removed. </p>
+                      <p>Saw yet kindness too replying whatever marianne. Old sentiments resolution admiration unaffected its mrs literature. Behaviour new set existence dashwoods. It satisfied to mr commanded consisted disposing engrossed. Tall snug do of till on easy. Form not calm new fail. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section> --}}
+        <!-- page 6-->
+        <section id="page6">
+          <div class="content">
+            <div class="container clearfix">
+              <div class="row">
+                <div class="col-md-12">
+                  <h2 class="heading">Contact</h2>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <form id="contact-form" method="post" action="contact.php" class="contact-form">
+                        <div class="controls">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label for="name">Your firstname *</label>
+                                <input type="text" name="name" placeholder="Enter your firstname" required="required" class="form-control">
+                              </div>
+                            </div>
+                            <div class="col-sm-6">
+                              <div class="form-group">
+                                <label for="surname">Your lastname *</label>
+                                <input type="text" name="surname" placeholder="Enter your  lastname" required="required" class="form-control">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="surname">Your email *</label>
+                            <input type="email" name="email" placeholder="Enter your  email" required="required" class="form-control">
+                          </div>
+                          <div class="form-group">
+                            <label for="surname">Your message for me *</label>
+                            <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
+                          </div>
+                          <div class="text-center">
+                            <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="col-md-6">
+                      <p>If you have inquiry about work or a freelance project. Feel free to send me a message.</p>
+                      <p>Checkout my LinkedIn and Github</p>
+                      <p class="social">
+                        <a href="#" title="" class="facebook"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <a href="#" title="" class="facebook"><i class="fa fa-github" aria-hidden="true"></i></a>
+                      </p>
+                    </div>
+                  </div>
+                  <div class="row copyright">
+                    <div class="col-md-6">
+                      <p>&copy;2016 Hieu Tran</p>
+                    </div>
+                    <div class="col-md-6">
+                      <p class="credit">Code by Hieu Tran</p>
+                      <p class="credit">Template by <a href="https://bootstrapious.com/portfolio-themes">Bootstrapious</a></p>
+                       <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- Javascript files-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="js/jquery.cookie.js"></script>
+    <script src="js/jquery.onepage-scroll.js"></script>
+    <script src="js/front.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
 </html>
