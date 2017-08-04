@@ -129,6 +129,22 @@ p.social a {
   transition: all 0.2s ease-out;
   vertical-align: bottom;
 }
+/* The close button */
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover {
+    color: black;
+}
 p.social a i {
   vertical-align: bottom;
   line-height: 26px;
@@ -149,10 +165,10 @@ p.social a.email {
   background-color: #4a7f45;
 }
 p.social a.linkedin{
-  background-color: #4a7f45;
+  background-color: #0077B5;
 }
 p.social a.github{
-  background-color: #cd4378;
+  background-color: #4078c0;
 }
 .copyright {
   margin-top: 40px;

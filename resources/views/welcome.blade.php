@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="all,follow">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <title>Hieu Tran</title>
 
     <!-- Fonts -->
@@ -28,10 +29,16 @@
 </head>
 <body>
     <div class="wrapper">
-      <div class="main"> 
+      <div class="main">
         <!-- page 1-->
         <section id="page1">
           <div class="overlay"></div>
+          @if(Session::has('success'))
+            <div class="alert alert-info">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>  
+                {{Session::get('success')}}
+            </div>
+          @endif
           <div class="content">
             <div class="container clearfix">
               <div class="row">
@@ -55,19 +62,19 @@
                   <h2 class="heading">About me</h2>
                   <p class="lead">
                     while(true) 
-                  <br>  if(hungry) 
-                  <br>    eat 
-                  <br>  else if (tired) 
-                  <br>    drink tea
-                  <br>  else
-                  <br>    code
+                  <br>  &emsp;if(hungry) 
+                  <br>    &emsp;&emsp;eat 
+                  <br>  &emsp;else if (tired) 
+                  <br>    &emsp;&emsp;drink tea
+                  <br>  &emsp;else
+                  <br>    &emsp;&emsp;code
                   </p>
                   <p> Coding is my passion. When stress, I relax by working out, playing sports, or fishing. I love cooking, one day I will own a food truck. </p>
-                  <p> I am currently working as Field Prototype Engineer at Mercedes-Benz | Future Transportation North America </p>
-                  <p> On my free time I work on iOS, Android, and Web projects. Please feel free to check out my portfolio. If need, CONTACT ME. </p>
+                  <p> My current job is a Field Prototype Engineer at Mercedes-Benz | Future Transportation North America </p>
+                  <p> On my free time I work on iOS, Android, and Web projects. Please feel free to check out my portfolio. If need, <b>CONTACT ME.</b> </p>
                 </div>
                 <div class="col-md-5 col-md-offset-1">
-                  <p><img src="img/about.jpg" alt="" class="img-responsive img-circle"></p>
+                  <p><img src="img/headshot.jpg" alt="" class="img-responsive img-circle"></p>
                 </div>
               </div>
             </div>
@@ -117,16 +124,16 @@
                   <p class="text-center">Browse my work!</p>
                   <div class="row">
                     <div class="col-sm-4">
-                      <div class="box"><a href="#" title=""><img src="img/portfolio-1.jpg" alt="" class="img-responsive"></a></div>
+                      <div class="box"><a href="https://reinvizion.com" title="" target="_blank"><img src="img/reinvizion.jpg" alt="" class="img-responsive"></a></div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="box"><a href="#" title=""><img src="img/portfolio-2.jpg" alt="" class="img-responsive"></a></div>
+                      <div class="box"><a href="#" title=""><img src="img/zombie.jpg" alt="" class="img-responsive"></a></div>
                     </div>
                     <div class="col-sm-4">
-                      <div class="box"><a href="#" title=""><img src="img/portfolio-3.jpg" alt="" class="img-responsive"></a></div>
+                      <div class="box"><a href="#" title=""><img src="img/xblaster.jpg" alt="" class="img-responsive"></a></div>
                     </div>
                   </div>
-                  <div class="row">
+{{--                   <div class="row">
                     <div class="col-sm-4">
                       <div class="box"><a href="#" title=""><img src="img/portfolio-4.jpg" alt="" class="img-responsive"></a></div>
                     </div>
@@ -136,7 +143,7 @@
                     <div class="col-sm-4">
                       <div class="box"><a href="#" title=""><img src="img/portfolio-6.jpg" alt="" class="img-responsive"></a></div>
                     </div>
-                  </div>
+                  </div> --}}
                 </div>
               </div>
             </div>
@@ -173,7 +180,8 @@
                   <h2 class="heading">Contact</h2>
                   <div class="row">
                     <div class="col-md-6">
-                      <form id="contact-form" method="post" action="contact.php" class="contact-form">
+                      <form id="contact-form" method="post" action="sendMessage" class="contact-form">
+                        {{ csrf_field() }}
                         <div class="controls">
                           <div class="row">
                             <div class="col-sm-6">
@@ -198,17 +206,18 @@
                             <textarea rows="4" name="message" placeholder="Enter your message" required="required" class="form-control"></textarea>
                           </div>
                           <div class="text-center">
-                            <input type="submit" name="name" value="Send message" class="btn btn-primary btn-block">
+                            <input type="submit" name="submit" value="Send message" class="btn btn-primary btn-block">
                           </div>
                         </div>
                       </form>
+
                     </div>
                     <div class="col-md-6">
                       <p>If you have inquiry about work or a freelance project. Feel free to send me a message.</p>
                       <p>Checkout my LinkedIn and Github</p>
                       <p class="social">
-                        <a href="#" title="" class="facebook"><i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <a href="#" title="" class="facebook"><i class="fa fa-github" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/hdtran89/" title="" class="linkedin" target="_blank"><i class="fa fa-linkedin-square fa-lg"></i>
+                        <a href="https://github.com/Hdtran89" title="" class="github"target="_blank"><i class="fa fa-github fa-lg"></i></a>
                       </p>
                     </div>
                   </div>
@@ -218,7 +227,7 @@
                     </div>
                     <div class="col-md-6">
                       <p class="credit">Code by Hieu Tran</p>
-                      <p class="credit">Template by <a href="https://bootstrapious.com/portfolio-themes">Bootstrapious</a></p>
+                      <p class="credit">Template by <a href="https://bootstrapious.com/portfolio-themes" target="_blank">Bootstrapious</a></p>
                        <!-- Not removing these links is part of the license conditions of the template. Thanks for understanding :) If you want to use the template without the attribution links, you can do so after supporting further themes development at https://bootstrapious.com/donate  -->
                     </div>
                   </div>
@@ -244,6 +253,7 @@
       e.src='//www.google-analytics.com/analytics.js';
       r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
       ga('create','UA-XXXXX-X');ga('send','pageview');
+
     </script>
   </body>
 </html>
