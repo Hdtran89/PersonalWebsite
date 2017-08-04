@@ -21,7 +21,7 @@
     <!-- Custom stylesheet - for your changes-->
     <link rel="stylesheet" href="css/custom.css">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="favicon.png">
+    <link rel="shortcut icon" href="favicon-desktop.ico">
     <!-- Tweaks for older IEs--><!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
         <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
@@ -90,21 +90,21 @@
                   <div class="row">
                     <div class="col-sm-4">
                       <div class="box">
-                        <div class="icon"><i class="fa fa-desktop"></i></div>
+                        <div class="icon"><i class="fa fa-desktop fa-lg"></i></div>
                         <h4 class="heading">WEB</h4>
                         <p><b>LAMP</b> is my cooking tools, but I can handle a <b>Python</b> or <b>Ruby</b> knife. To make a dish look presentable, I use <b>Javascript</b> and to garnish I use <b>CSS</b></p>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="box">
-                        <div class="icon"><i class="fa fa-mobile"></i></div>
+                        <div class="icon"><i class="fa fa-apple fa-lg"></i></div>
                         <h4 class="heading">iOS</h4>
                         <p><b>Swift</b> is my knife. <b>Objective-C</b> is my cutting board. With this combination my knife skills are near perfection.</p>
                       </div>
                     </div>
                     <div class="col-sm-4">
                       <div class="box">
-                        <div class="icon"><i class="fa fa-android"></i></div>
+                        <div class="icon"><i class="fa fa-android fa-lg"></i></div>
                         <h4 class="heading">ANDROID</h4>
                         <p>My stove is <b>Java</b>. I create wonderful Apps with this stove. </p>
                       </div>
