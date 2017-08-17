@@ -245,6 +245,7 @@
     <script src="js/jquery.cookie.js"></script>
     <script src="js/jquery.onepage-scroll.js"></script>
     <script src="js/front.js"></script>
+    <script type="text/javascript" src="https://cdn.ywxi.net/js/1.js" async></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.-->
     <script>
       (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
