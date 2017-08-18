@@ -74,7 +74,7 @@
                   <p> On my free time I work on iOS, Android, and Web projects. Please feel free to check out my portfolio. If need, <b>CONTACT ME.</b> </p>
                 </div>
                 <div class="col-md-5 col-md-offset-1">
-                  <p><img src="img/headshot.jpg" alt="" class="img-responsive img-circle"></p>
+                  <p><img src="img/headshot3.jpg" alt="" class="img-responsive img-circle"></p>
                 </div>
               </div>
             </div>
